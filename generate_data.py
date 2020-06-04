@@ -30,10 +30,6 @@ with open("{}.in".format(i), "w") as fin:
     for _ in range(n):
       a = random.randint(0, 1e7)
       b = random.randint(0, mb)
-      # print(a, b)
-      # print(exp(a, b))
-      # print(exp_fast(a, b))
-      # assert exp(a, b) == exp_fast(a, b)
       fin.write("{} {}\n".format(a, b))
       fout.write("{}\n".format(exp_fast(a, b)))
 
